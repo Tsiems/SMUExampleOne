@@ -14,6 +14,10 @@
 		B63FB2031A709147007921E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63FB2021A709147007921E4 /* Images.xcassets */; };
 		B63FB2061A709147007921E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63FB2041A709147007921E4 /* LaunchScreen.xib */; };
 		B63FB2121A709147007921E4 /* SMUExampleOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B63FB2111A709147007921E4 /* SMUExampleOneTests.m */; };
+		B63FB21D1A7091A6007921E4 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B63FB21C1A7091A6007921E4 /* ImageModel.m */; };
+		B63FB2201A70969F007921E4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63FB21F1A70969F007921E4 /* TableViewController.m */; };
+		B63FB2261A70C64C007921E4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63FB2251A70C64C007921E4 /* CollectionViewController.m */; };
+		B63FB2291A70C839007921E4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B63FB2281A70C839007921E4 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		B63FB20B1A709147007921E4 /* SMUExampleOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMUExampleOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63FB2101A709147007921E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63FB2111A709147007921E4 /* SMUExampleOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMUExampleOneTests.m; sourceTree = "<group>"; };
+		B63FB21B1A7091A6007921E4 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		B63FB21C1A7091A6007921E4 /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		B63FB21E1A70969F007921E4 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B63FB21F1A70969F007921E4 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B63FB2241A70C64C007921E4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		B63FB2251A70C64C007921E4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		B63FB2271A70C839007921E4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		B63FB2281A70C839007921E4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +97,15 @@
 				B63FB1FA1A709147007921E4 /* AppDelegate.m */,
 				B63FB1FC1A709147007921E4 /* ViewController.h */,
 				B63FB1FD1A709147007921E4 /* ViewController.m */,
+				B63FB21B1A7091A6007921E4 /* ImageModel.h */,
+				B63FB21C1A7091A6007921E4 /* ImageModel.m */,
 				B63FB1FF1A709147007921E4 /* Main.storyboard */,
+				B63FB2241A70C64C007921E4 /* CollectionViewController.h */,
+				B63FB2251A70C64C007921E4 /* CollectionViewController.m */,
+				B63FB2271A70C839007921E4 /* CollectionViewCell.h */,
+				B63FB2281A70C839007921E4 /* CollectionViewCell.m */,
+				B63FB21E1A70969F007921E4 /* TableViewController.h */,
+				B63FB21F1A70969F007921E4 /* TableViewController.m */,
 				B63FB2021A709147007921E4 /* Images.xcassets */,
 				B63FB2041A709147007921E4 /* LaunchScreen.xib */,
 				B63FB1F51A709147007921E4 /* Supporting Files */,
@@ -221,7 +241,11 @@
 			files = (
 				B63FB1FE1A709147007921E4 /* ViewController.m in Sources */,
 				B63FB1FB1A709147007921E4 /* AppDelegate.m in Sources */,
+				B63FB2261A70C64C007921E4 /* CollectionViewController.m in Sources */,
 				B63FB1F81A709147007921E4 /* main.m in Sources */,
+				B63FB2201A70969F007921E4 /* TableViewController.m in Sources */,
+				B63FB2291A70C839007921E4 /* CollectionViewCell.m in Sources */,
+				B63FB21D1A7091A6007921E4 /* ImageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
