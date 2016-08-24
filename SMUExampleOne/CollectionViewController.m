@@ -36,7 +36,10 @@ static NSString * const reuseIdentifier = @"ImageCollectCell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    // [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    // UPDATE: this is only required when the cell is configured programatically
+    // Since we use the storyboard, we should NOT register the class. Per the instructions here:
+    // https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/CreatingCellsandViews/CreatingCellsandViews.html#//apple_ref/doc/uid/TP40012334-CH7-SW10
+    //[self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
 }
