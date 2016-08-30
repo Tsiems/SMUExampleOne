@@ -8,6 +8,17 @@
 
 #import "ImageModel.h"
 
+@interface ImageModel()
+
+@property (strong,nonatomic) NSArray* imageNames;
+@property (strong,nonatomic) NSArray* images;
+
+-(UIImage*)getImageWithName:(NSString*)name;
+
+@end
+
+
+
 @implementation ImageModel
 @synthesize imageNames = _imageNames;
 
@@ -36,5 +47,41 @@
     image = [UIImage imageNamed:name];
     return image;
 }
+
+-(NSArray*)getImage:(NSInteger *)index{
+    UIImage* image = nil;
+    image = [self getImages][(int) index];
+    
+    NSString* name = nil;
+    name = [self getImageNames][(int) index];
+    return @[image,name];
+}
+
+-(NSArray*)getImageNames {
+    if(!_imageNames)
+        _imageNames = @[@"Eric1",@"Eric2",@"Eric3",@"stark",@"lannister",@"arrestedwesteros"];
+    
+    return _imageNames;
+}
+
+-(NSArray*)getImages {
+    if(!_images) {
+        NSArray* imageNames = [self getImageNames];
+        NSMutableArray *tempImages = [NSMutableArray new];
+        for (NSString* name in imageNames) {
+            [tempImages addObject:[self getImageWithName:name]];
+        }
+        _images = [tempImages copy];
+    }
+    
+    return _images;
+}
+
+-(NSInteger*)getImageCount {
+    NSArray *array = [self getImages];
+    return (NSInteger*)[array count];
+}
+
+
 
 @end

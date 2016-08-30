@@ -1,0 +1,5 @@
+For Thought:
+
+1.  This implementation is more efficient after all the images are loaded because images are all loaded at the beginning. Rather than reading in the images twice for the image and name, we read it once and get both information.
+2.  It is more scalable because the image name and image data are in one data structure rather than two. For the collection view, we already have all the images loaded rather than having to load them in each time we go to the collection view.
+3.  If there were 1000+ images, we would want to load ranges of images (ex: 10 images at a time) instead of loading all of them at once. This would allow the user to see the images he needs to without waiting a long time at the beginning of loading the model.

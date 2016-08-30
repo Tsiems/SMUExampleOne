@@ -31,15 +31,23 @@
 -(NSString*)imageName{
     
     if(!_imageName)
-        _imageName = @"Eric1";
+        _imageName = [[ImageModel sharedInstance] getImage:self.imageIndex][1];
     
     return _imageName;
+}
+
+-(NSInteger*)imageIndex{
+    
+    if(!_imageIndex)
+        _imageIndex = 0;
+    
+    return _imageIndex;
 }
 
 -(UIImageView*)imageView{
     
     if(!_imageView)
-        _imageView = [[UIImageView alloc] initWithImage:[[ImageModel sharedInstance] getImageWithName:self.imageName]];
+        _imageView = [[UIImageView alloc] initWithImage:[[ImageModel sharedInstance] getImage:self.imageIndex][0]];
     return _imageView;
 }
 

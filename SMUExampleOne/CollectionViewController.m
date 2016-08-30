@@ -67,7 +67,7 @@ static NSString * const reuseIdentifier = @"ImageCollectCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.myImageModel.imageNames.count;
+    return (int)[self.myImageModel getImageCount];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -75,7 +75,7 @@ static NSString * const reuseIdentifier = @"ImageCollectCell";
     
     // Configure the cell
     cell.backgroundColor = [UIColor blueColor];
-    cell.imageView.image = [self.myImageModel getImageWithName:self.myImageModel.imageNames[indexPath.row]];
+    cell.imageView.image = [self.myImageModel getImage: (NSInteger*)indexPath.row][0];
     
     return cell;
 }
